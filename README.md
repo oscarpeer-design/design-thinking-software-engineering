@@ -32,12 +32,6 @@ Optional **learning mode**: say you want to practise, and Claude scaffolds the c
 
 Start a new conversation after installing.
 
-## Try it
-
-> Help me build an AI tool that does market research on ETFs and gives users evidence-based valuation views.
-
-You should see a status line and a set of interview questions before any code.
-
 ## Contents
 
 ```
