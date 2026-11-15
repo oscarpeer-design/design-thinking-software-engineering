@@ -26,7 +26,7 @@ Optional **learning mode**: say you want to practise, and Claude scaffolds the c
 
 ## Install
 
-**Claude app (web or desktop):** zip the `design-thinking-software-engineering` folder so the folder itself is at the top level of the zip, then go to Customize > Skills > Create skill > Upload a skill.
+**Claude app (web or desktop):** download `design-thinking-software-engineering.zip` from this repo, then go to Customize > Skills > Create skill > Upload a skill and upload it. The zip has the skill folder at its top level, as the upload requires.
 
 **Claude Code:** clone or copy this folder to `~/.claude/skills/design-thinking-software-engineering/` for all projects, or to `.claude/skills/design-thinking-software-engineering/` in one project.
 
@@ -50,6 +50,16 @@ references/learning-mode.md   scaffolding and feedback for practice
 ## Customising
 
 The numbers in `SKILL.md` (reading limits, spec length, finding caps) are defaults. The list of decisions reserved for the user is under "Decisions that belong to the user". Edit it to match how you work.
+
+## Rebuilding the zip
+
+After changing any skill file, commit the change, then rebuild the zip from the committed files so it never goes stale:
+
+```
+git archive --format=zip --prefix=design-thinking-software-engineering/ -o design-thinking-software-engineering.zip HEAD SKILL.md references
+```
+
+Then commit the new zip.
 
 ## Limitations
 
