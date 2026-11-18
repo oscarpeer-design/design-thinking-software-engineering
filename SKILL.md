@@ -112,7 +112,16 @@ Start learning mode when the user says words like "practice", "learn", "teach me
 
 ## Closing lines
 
-End every response in which you wrote or changed code with these two lines:
+End every response in which you wrote or changed code with these two lines, so the user can see what to check first:
 
+```
 Not verified: <each thing you did not run or check, or "nothing">
 Breaks first if: <the first input or condition you expect to make it fail>
+```
+
+Example (illustrative only; do not reuse the wording):
+
+```
+Not verified: behaviour with files over 10,000 rows; the live API call
+Breaks first if: the CSV header row is in a different language
+```
