@@ -42,4 +42,5 @@ Use these steps in order. Move to the next step only when the user says they are
 - A scaffold asks the user to write one function, or at most 40 lines.
 - Do not give a full solution unless the user asks for it.
 - When the user finishes a component, ask one question about their code, such as "why does this handle an empty input the way it does?" Ask at most one question per component.
+- Run the adversarial check (see Definitions in `SKILL.md`) on each scaffold and each component you write before you show it.
 - Write concisely.

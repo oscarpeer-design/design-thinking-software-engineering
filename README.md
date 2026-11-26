@@ -12,13 +12,13 @@ Code written from an unclear request often carries assumptions nobody approved, 
 
 | Step | What happens |
 |---|---|
-| 1. Empathise | Claude reads the project, then asks the questions whose answers would change the design, including social responsibility and ethics questions. |
+| 1. Empathise | Claude reads the project, then asks, one at a time, the questions whose answers would change the design, including social responsibility and ethics questions. |
 | 2. Define | A how-might-we statement, user stories, and up to 3 yes/no success criteria. |
 | 3. Ideate | 2-3 approaches that differ in kind, each with a trade-off and a risk. You pick. |
 | 4. Prototype | A disposable test of the riskiest assumption. |
 | 5. Test | You review the result. The process can loop back to steps 2 or 3. |
 | 6. Specify | A spec of about 1,000 words with components, owners, and suggested main risks. You approve it before any implementation. |
-| 7-10. Build | Components are built one at a time, reviewed against checks drawn from your own spec, tested, and the spec is kept in step with the code. |
+| 7-10. Build | Components are built one at a time as short, plain, documented code that Claude first checks adversarially for bugs, then reviewed against checks drawn from your own spec, tested, and the spec is kept in step with the code. |
 
 Claude stops and waits for your reply at each gate. Small changes use a lighter version, and trivial edits skip the process.
 

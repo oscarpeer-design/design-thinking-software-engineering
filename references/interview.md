@@ -4,12 +4,12 @@ Read this before writing the questions for step 1.
 
 ## Rules for asking
 
-1. Send all questions in one message, as a numbered list.
+1. Ask one question per message. Write the whole list for yourself first, then show only the next question after each reply, starting it with `Question <n> of <total>:`. Each question is one sentence about one thing. If a question in the bank below has two parts that could have different answers, ask the parts as separate questions, or keep only the part whose answer matters.
 2. Ask one question for each decision area where the files do not answer it and a different answer would make you build a different component, interface, or data structure. There is no limit on the number of questions. Also ask the social responsibility and ethics questions below when the software involves people. Do not ask any other question. Write each one concisely.
-3. Group the questions under the topic headings below, so the user can answer area by area.
+3. Ask the questions in the order of the topic headings below. After each reply, delete any remaining question that the reply already answered, and update the total. If the user answers several questions in one reply, accept all the answers.
 4. Skip any question that the project's files already answer.
-5. Write a default answer after each question, for example "(default: just you)". The user can reply "defaults" to accept all of them.
-6. For questions the user leaves unanswered, use the default and list those defaults in your next response. Mark them "unconfirmed" in the Assumptions section of the spec. If the user replied "defaults", mark them "confirmed".
+5. Write a default answer after each question, for example "(default: just you)". The user can reply "defaults" to accept the defaults for all remaining questions.
+6. For a question the user skips, use its default. After the last answer, list every default you used and go straight to step 2. Mark those defaults "unconfirmed" in the Assumptions section of the spec. If the user replied "defaults", mark them "confirmed".
 7. If no user can reply, use the defaults, mark them "unconfirmed" in the spec, and list them under "Unconfirmed assumptions" at the top of your output.
 
 ## Question bank
@@ -52,7 +52,7 @@ If the request names no file, function, or feature in the project, the first que
 
 Request: "build me a tool that tracks my expenses."
 
-Questions:
+The list you write for yourself. Show it one question at a time, as "Question 1 of 7: ..." and so on, after each reply:
 1. Is it for you only, or for more than one person? (default: you only)
 2. Where does the data come from: typed in, a bank export, or receipts? (default: a CSV export from the bank)
 3. What output do you want: monthly totals, categories, or alerts? (default: monthly totals by category)
